@@ -25,8 +25,7 @@
 		},
 		methods:{
 			operateList(){
-				let key = "";
-				let listItem = "";
+				let [key, listItem] = ["", ""];
 				this.$store.state.dataList.forEach(i=>{
 					if(/[a-zA-Z]/.test(i.name[0])){
 						key = i.name[0].toUpperCase();
